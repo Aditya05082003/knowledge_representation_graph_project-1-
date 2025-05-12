@@ -81,7 +81,7 @@ if st.button("Generate Knowledge Graph"):
     if not content.strip():
         st.warning("Please provide content to analyze.")
     else:
-        with st.spinner("Analyzing with Gemini..."):
+        with st.spinner("Analyzing..."):
             response_text = extract_relations_gemini(content)
             triples = parse_relations(response_text)
 
